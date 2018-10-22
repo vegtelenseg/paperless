@@ -1,48 +1,59 @@
-const { GraphQLSchema } = require('graphql');
-const { GraphQLObjectType, GraphQLList, GraphQLString, GraphQLInt } = require('graphql');
 const joinMonster = require('join-monster').default;
 
-const dataFilePath = '/Library/PostgreSQL/9.6/data/'
+const {
+  GraphQLObjectType,
+  GraphQLInt,
+  GraphQLList,
+  GraphQLNonNull,
+  GraphQLSchema,
+  GraphQLString
+} = require('graphql');
+
+
 const knex = require('knex')({
-  client: 'postgres',
+  client: 'pg',
   connection: {
-    filename: dataFilePath,
+    host : '127.0.0.1',
+    user : 'postgres',
+    password : 'F#ck2018',
+    database : 'postgres'
   }
 });
 
+
 const Student = new GraphQLObjectType({
   name: 'Student',
-  sqlTable: 'student',
-  uniqueKey: 'id',
-  fields: () => ({
-    id: {
-      type: GraphQLInt
+  fields: {
+    student_id: {
+      type: GraphQLNonNull(GraphQLInt)
     },
-    name: {
-      type: GraphQLString
+    student_name: {
+      type: GraphQLNonNull(GraphQLString)
     }
-  })
+  }
 });
 
-const QueryRoot = new GraphQLObjectType({
-  name: 'QueryRoot',
+Student._typeConfig = {
+  sqlTable: 'student',
+  uniqueKey: 'student_id'
+}
+
+const RootQuery = new GraphQLObjectType({
+  name: 'RootQuery',
   fields: () => ({
     student: {
-      type: new GraphQLList(Student),
+      type: Student,
       resolve: (parent, args, context, resolveInfo) => {
-        return joinMonster(resolveInfo, {}, sql => {
-          console.log("Sql: ", sql)
-          // knex is a SQL query library for NodeJS. This method returns a `Promise` of the data
-          return knex.raw(sql)
-        }, {
-          dialect: 'pg'
-        })
+        return joinMonster(resolveInfo, context,
+          sql => knex.raw(sql).then(val => {
+            return val;
+          })
+        )
       }
     }
   })
-});
+})
 
-module.exports = new GraphQLSchema({
-  description: 'The paperless schema',
-  query: QueryRoot
+module.exports =  new GraphQLSchema({
+  query: RootQuery
 })
