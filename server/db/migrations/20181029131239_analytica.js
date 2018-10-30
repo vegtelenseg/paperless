@@ -1,56 +1,6 @@
-const { knex } = require('../config/config');
-const { teachers, courses, students, supervisors } = require('../config/config-data/config-data.dummy');
-
-function addTeachers(teachers = []) {
-  if (teachers.length > 0) {
-    teachers.forEach((teacher, idx) => knex('teacher').insert({ teacher_name: teacher, supervisor_id: ++idx }).delay(500))
-  }
-}
-
-function addStudents(students = []) {
-  if (students.length > 0) {
-    console.log(students)
-    students.forEach(student => knex('student').insert({ student_name: student }).delay(500))
-  }
-}
-
-function addCourses(courses = []) {
-  if (courses.length > 0) {
-    courses.forEach(course => knex('subject').insert({ subject_name: course }).delay(500));
-  }
-}
-
-function addSupervisor(supervisors = []) {
-  if (supervisors.length > 0) {
-    supervisors.forEach((supervisor, idx) => {
-      const supervisee = idx;
-      knex('supervisor').insert({ supervisor_name: supervisor })
-    })
-  }
-}
-
-function addSupervises() {
-  let i = -1;
-  while (500 > ++i) {
+exports.up = function createSchema(knex, Promise) {
+  return Promise.all([
     knex.raw(`
-    UPDATE teacher
-    SET supervisor_id = ${Math.ceil(Math.random() * 10)}
-    WHERE teacher.teacher_id = ${i + 1}
-  `).delay(300)
-  }
-}
-
-function addSubjectTeacher() {
-  teachers.forEach((teacher, idx) => {
-    knex.raw(`
-    INSERT INTO subject_teacher(st_subject_id, st_teacher_id)
-    VALUES(${(idx + 1) % 9}, ${(idx + 1)})`).delay(500)
-  })
-}
-
-
-function createSchema() {
-  knex.raw(`
       CREATE TABLE IF NOT EXISTS supervisor
       (
         supervisor_id SERIAL NOT NULL UNIQUE,
@@ -58,7 +8,8 @@ function createSchema() {
         CONSTRAINT supervisor_pk PRIMARY KEY(supervisor_id)
       );
 
-      CREATE TABLE IF NOT EXISTS teacher(
+      CREATE TABLE IF NOT EXISTS teacher
+      (
         supervisor_id INT NOT NULL,
 
         teacher_id SERIAL NOT NULL,
@@ -129,27 +80,12 @@ function createSchema() {
         CONSTRAINT subject_student_supervisor_pk PRIMARY KEY (sss_subject_id, sss_student_id, sss_supervisor_id),  
         CONSTRAINT subject_student_supervisor_sss_uq  UNIQUE (sss_subject_id, sss_student_id, sss_supervisor_id)
       );
-  `).delay(0);
+  `).delay(10)]);
 }
 
-function resetDB() {
-
-  knex.raw(`
+exports.down = function resetDB(knex, Promise) {
+  return Promise.all([knex.raw(`
     DROP SCHEMA IF EXISTS public CASCADE;
     CREATE SCHEMA IF NOT EXISTS public;
-  `);
-}
-
-function loadSampleData() {
-  addSupervisor(supervisors);
-  addTeachers(teachers);
- // addStudents(students);
-  //addCourses(courses);
-  //addSupervises(supervisors);
-}
-
-module.exports = {
-  createSchema,
-  loadSampleData,
-  resetDB
+  `).delay(10)]);
 }

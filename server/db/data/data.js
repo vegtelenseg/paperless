@@ -845,7 +845,7 @@ module.exports = {
     'Williams',
     'Williamson',
   ],
-    students: [
+  students: [
     'Livingston',
     'Lloyd',
     'Logan',
