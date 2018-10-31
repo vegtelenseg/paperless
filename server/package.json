@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "knex:resetDB": "node ./migrations/resetDB",
-    "knex:loadSampleData": "node ./migrations/loadSampleData",
-    "knex:createSchema": "node ./migrations/createSchema"
+    "knex:rollback": "./node_modules/.bin/knex migrate:rollback",
+    "knex:seed": "./node_modules/.bin/knex seed:run",
+    "knex:migrate": "./node_modules/.bin/knex migrate:latest"
   },
   "author": "",
   "license": "ISC",
@@ -19,10 +19,10 @@
     "graphql-tools": "^4.0.2",
     "join-monster": "^2.1.0",
     "join-monster-graphql-tools-adapter": "0.0.3",
-    "knex": "^0.15.2",
     "pg": "^7.5.0"
   },
   "devDependencies": {
+    "knex": "^0.15.2",
     "prettier": "^1.14.3"
   }
 }

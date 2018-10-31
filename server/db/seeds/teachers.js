@@ -8,11 +8,10 @@ exports.seed = function (knex, Promise) {
         console.log(teachers)
         teachers.forEach((teacher, idx) => knex('teacher')
           .insert({
-            supervisor_id: 2755,
-            teacher_name: teacher
-          }).then(val => {
-            console.log({val})
-          }).delay(100))
+            supervisor_id: 2577,
+            teacher_name: teacher,
+          })
+            .delay(100))
       }
     });
 };
