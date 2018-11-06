@@ -66,11 +66,11 @@ exports.up = function(knex, Promise) {
         UNIQUE (sss_subject_id, sss_student_id, sss_supervisor_id)
       );
   `);
-}
+};
 
 exports.down = function resetDB(knex, Promise) {
   return knex.raw(`
     DROP SCHEMA IF EXISTS public CASCADE;
     CREATE SCHEMA IF NOT EXISTS public;
   `);
-}
+};

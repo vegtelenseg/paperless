@@ -27,7 +27,7 @@ const StudentType = new GraphQLObjectType({
 StudentType._typeConfig = {
   sqlTable: 'student',
   uniqueKey: 'student_id'
-}
+};
 
 // Teacher Type
 const TeacherType = new GraphQLObjectType({
@@ -45,7 +45,7 @@ const TeacherType = new GraphQLObjectType({
 TeacherType._typeConfig = {
   sqlTable: 'teacher',
   uniqueKey: 'teacher_id'
-}
+};
 
 // Root Type
 const RootQueryType = new GraphQLObjectType({
@@ -58,7 +58,8 @@ const RootQueryType = new GraphQLObjectType({
           type: GraphQLNonNull(GraphQLID)
         }
       },
-      resolve: (parent, args, context, resolveInfo) => getStudentById(parent, args, context, resolveInfo)
+      resolve: (parent, args, context, resolveInfo) =>
+        getStudentById(parent, args, context, resolveInfo)
     },
     teacher: {
       type: TeacherType,
@@ -67,12 +68,12 @@ const RootQueryType = new GraphQLObjectType({
           type: GraphQLNonNull(GraphQLID)
         }
       },
-      resolve: (parent, args, context, resolveInfo) => getTeacherById(parent, args, context, resolveInfo)
+      resolve: (parent, args, context, resolveInfo) =>
+        getTeacherById(parent, args, context, resolveInfo)
     }
   })
 });
 
-
 module.exports = {
   RootQueryType
-}
+};
