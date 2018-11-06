@@ -1,5 +1,6 @@
 const joinMonster = require('join-monster').default;
-const { knex } = require('../config/config');
+const knexConfig = require('../knexfile');
+const knex  = require('knex')(knexConfig);
 
 const getStudentById = (parent, args, context, resolveInfo) =>
   joinMonster(resolveInfo, context, () =>
