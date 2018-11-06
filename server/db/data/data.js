@@ -1,7 +1,5 @@
 module.exports = {
   supervisors: [{ supervisor_name: "Noble", supervisor_id: 1 }, { supervisor_name: "Noel", supervisor_id: 2 }, { supervisor_name: "Nolan", supervisor_id: 3 }, { supervisor_name: "Norman", supervisor_id: 4 }, { supervisor_name: "Norris", supervisor_id: 5 }, { supervisor_name: "Norton", supervisor_id: 6 }, { supervisor_name: "Nunez", supervisor_id: 7 }, { supervisor_name: "Obrien", supervisor_id: 8 }, { supervisor_name: "Ochoa", supervisor_id: 9 }, { supervisor_name: "Oconnor", supervisor_id: 10 }, { supervisor_name: "Odom", supervisor_id: 11 }, { supervisor_name: "Odonnell", supervisor_id: 12 }, { supervisor_name: "Oliver", supervisor_id: 13 }, { supervisor_name: "Olsen", supervisor_id: 14 }, { supervisor_name: "Olson", supervisor_id: 15 }, { supervisor_name: "Oneal", supervisor_id: 16 }, { supervisor_name: "Oneil", supervisor_id: 17 }, { supervisor_name: "Oneill", supervisor_id: 18 }, { supervisor_name: "Orr", supervisor_id: 19 }, { supervisor_name: "Ortega", supervisor_id: 20 }, { supervisor_name: "Ortiz", supervisor_id: 21 }, { supervisor_name: "Osborn", supervisor_id: 22 }, { supervisor_name: "Osborne", supervisor_id: 23 }, { supervisor_name: "Owen", supervisor_id: 24 }, { supervisor_name: "Owens", supervisor_id: 25 }, { supervisor_name: "Pace", supervisor_id: 26 }, { supervisor_name: "Pacheco", supervisor_id: 27 }, { supervisor_name: "Padilla", supervisor_id: 28 }, { supervisor_name: "Page", supervisor_id: 29 }, { supervisor_name: "Palmer", supervisor_id: 30 }, { supervisor_name: "Park", supervisor_id: 31 }, { supervisor_name: "Parker", supervisor_id: 32 }, { supervisor_name: "Parks", supervisor_id: 33 }, { supervisor_name: "Parrish", supervisor_id: 34 }, { supervisor_name: "Parsons", supervisor_id: 35 }, { supervisor_name: "Pate", supervisor_id: 36 }, { supervisor_name: "Patel", supervisor_id: 37 }, { supervisor_name: "Patrick", supervisor_id: 38 }, { supervisor_name: "Patterson", supervisor_id: 39 }, { supervisor_name: "Patton", supervisor_id: 40 }, { supervisor_name: "Paul", supervisor_id: 41 }, { supervisor_name: "Payne", supervisor_id: 42 }, { supervisor_name: "Pearson", supervisor_id: 43 }, { supervisor_name: "Peck", supervisor_id: 44 }, { supervisor_name: "Pena", supervisor_id: 45 }, { supervisor_name: "Pennington", supervisor_id: 46 }, { supervisor_name: "Perez", supervisor_id: 47 }, { supervisor_name: "Perkins", supervisor_id: 48 }, { supervisor_name: "Perry", supervisor_id: 49 }, { supervisor_name: "Peters", supervisor_id: 50 }, { supervisor_name: "Petersen", supervisor_id: 51 }, { supervisor_name: "Peterson", supervisor_id: 52 }, { supervisor_name: "Petty", supervisor_id: 53 }, { supervisor_name: "Phelps", supervisor_id: 54 }, { supervisor_name: "Phillips", supervisor_id: 55 }, { supervisor_name: "Pickett", supervisor_id: 56 }, { supervisor_name: "Pierce", supervisor_id: 57 }, { supervisor_name: "Pittman", supervisor_id: 58 }, { supervisor_name: "Pitts", supervisor_id: 59 }, { supervisor_name: "Pollard", supervisor_id: 60 }, { supervisor_name: "Poole", supervisor_id: 61 }, { supervisor_name: "Pope", supervisor_id: 62 }, { supervisor_name: "Porter", supervisor_id: 63 }, { supervisor_name: "Potter", supervisor_id: 64 }, { supervisor_name: "Potts", supervisor_id: 65 }, { supervisor_name: "Powell", supervisor_id: 66 }, { supervisor_name: "Powers", supervisor_id: 67 }, { supervisor_name: "Pratt", supervisor_id: 68 }, { supervisor_name: "Preston", supervisor_id: 69 }, { supervisor_name: "Price", supervisor_id: 70 }, { supervisor_name: "Prince", supervisor_id: 71 }, { supervisor_name: "Pruitt", supervisor_id: 72 }, { supervisor_name: "Puckett", supervisor_id: 73 }, { supervisor_name: "Pugh", supervisor_id: 74 }, { supervisor_name: "Quinn", supervisor_id: 75 }, { supervisor_name: "Ramirez", supervisor_id: 76 }, { supervisor_name: "Ramos", supervisor_id: 77 }, { supervisor_name: "Ramsey", supervisor_id: 78 }, { supervisor_name: "Randall", supervisor_id: 79 }, { supervisor_name: "Randolph", supervisor_id: 80 }, { supervisor_name: "Rasmussen", supervisor_id: 81 }, { supervisor_name: "Ratliff", supervisor_id: 82 }, { supervisor_name: "Ray", supervisor_id: 83 }, { supervisor_name: "Raymond", supervisor_id: 84 }, { supervisor_name: "Reed", supervisor_id: 85 }, { supervisor_name: "Reese", supervisor_id: 86 }, { supervisor_name: "Reeves", supervisor_id: 87 }, { supervisor_name: "Reid", supervisor_id: 88 }, { supervisor_name: "Reilly", supervisor_id: 89 }, { supervisor_name: "Reyes", supervisor_id: 90 }, { supervisor_name: "Reynolds", supervisor_id: 91 }, { supervisor_name: "Rhodes", supervisor_id: 92 }, { supervisor_name: "Rice", supervisor_id: 93 }, { supervisor_name: "Rich", supervisor_id: 94 }, { supervisor_name: "Richard", supervisor_id: 95 }, { supervisor_name: "Richards", supervisor_id: 96 }, { supervisor_name: "Richardson", supervisor_id: 97 }, { supervisor_name: "Richmond", supervisor_id: 98 }, { supervisor_name: "Riddle", supervisor_id: 99 }, { supervisor_name: "Riggs", supervisor_id: 100 }, { supervisor_name: "Riley", supervisor_id: 101 }, { supervisor_name: "Rios", supervisor_id: 102 }, { supervisor_name: "Rivas", supervisor_id: 103 }, { supervisor_name: "Rivera", supervisor_id: 104 }, { supervisor_name: "Rivers", supervisor_id: 105 }, { supervisor_name: "Roach", supervisor_id: 106 }, { supervisor_name: "Robbins", supervisor_id: 107 }, { supervisor_name: "Roberson", supervisor_id: 108 }, { supervisor_name: "Roberts", supervisor_id: 109 }, { supervisor_name: "Robertson", supervisor_id: 110 }, { supervisor_name: "Robinson", supervisor_id: 111 }, { supervisor_name: "Robles", supervisor_id: 112 }, { supervisor_name: "Rocha", supervisor_id: 113 }, { supervisor_name: "Rodgers", supervisor_id: 114 }, { supervisor_name: "Rodriguez", supervisor_id: 115 }, { supervisor_name: "Rodriquez", supervisor_id: 116 }, { supervisor_name: "Rogers", supervisor_id: 117 }, { supervisor_name: "Rojas", supervisor_id: 118 }, { supervisor_name: "Rollins", supervisor_id: 119 }, { supervisor_name: "Roman", supervisor_id: 120 }, { supervisor_name: "Romero", supervisor_id: 121 }, { supervisor_name: "Rosa", supervisor_id: 122 }, { supervisor_name: "Rosales", supervisor_id: 123 }, { supervisor_name: "Rosario", supervisor_id: 124 }, { supervisor_name: "Rose", supervisor_id: 125 }, { supervisor_name: "Ross", supervisor_id: 126 }, { supervisor_name: "Roth", supervisor_id: 127 }, { supervisor_name: "Rowe", supervisor_id: 128 }, { supervisor_name: "Rowland", supervisor_id: 129 }, { supervisor_name: "Roy", supervisor_id: 130 }, { supervisor_name: "Ruiz", supervisor_id: 131 }, { supervisor_name: "Rush", supervisor_id: 132 }, { supervisor_name: "Russell", supervisor_id: 133 }, { supervisor_name: "Russo", supervisor_id: 134 }, { supervisor_name: "Rutledge", supervisor_id: 135 }, { supervisor_name: "Ryan", supervisor_id: 136 }, { supervisor_name: "Salas", supervisor_id: 137 }, { supervisor_name: "Salazar", supervisor_id: 138 }, { supervisor_name: "Salinas", supervisor_id: 139 }, { supervisor_name: "Sampson", supervisor_id: 140 }, { supervisor_name: "Sanchez", supervisor_id: 141 }, { supervisor_name: "Sanders", supervisor_id: 142 }, { supervisor_name: "Sandoval", supervisor_id: 143 }, { supervisor_name: "Sanford", supervisor_id: 144 }, { supervisor_name: "Santana", supervisor_id: 145 }, { supervisor_name: "Santiago", supervisor_id: 146 }, { supervisor_name: "Santos", supervisor_id: 147 }, { supervisor_name: "Sargent", supervisor_id: 148 }, { supervisor_name: "Saunders", supervisor_id: 149 }, { supervisor_name: "Savage", supervisor_id: 150 }, { supervisor_name: "Sawyer", supervisor_id: 151 }, { supervisor_name: "Schmidt", supervisor_id: 152 }, { supervisor_name: "Schneider", supervisor_id: 153 }, { supervisor_name: "Schroeder", supervisor_id: 154 }, { supervisor_name: "Schultz", supervisor_id: 155 }, { supervisor_name: "Schwartz", supervisor_id: 156 }, { supervisor_name: "Scott", supervisor_id: 157 }, { supervisor_name: "Sears", supervisor_id: 158 }, { supervisor_name: "Sellers", supervisor_id: 159 }, { supervisor_name: "Serrano", supervisor_id: 160 }, { supervisor_name: "Sexton", supervisor_id: 161 }, { supervisor_name: "Shaffer", supervisor_id: 162 }, { supervisor_name: "Shannon", supervisor_id: 163 }, { supervisor_name: "Sharp", supervisor_id: 164 }, { supervisor_name: "Sharpe", supervisor_id: 165 }, { supervisor_name: "Shaw", supervisor_id: 166 }, { supervisor_name: "Shelton", supervisor_id: 167 }, { supervisor_name: "Shepard", supervisor_id: 168 }, { supervisor_name: "Shepherd", supervisor_id: 169 }, { supervisor_name: "Sheppard", supervisor_id: 170 }, { supervisor_name: "Sherman", supervisor_id: 171 }, { supervisor_name: "Shields", supervisor_id: 172 }, { supervisor_name: "Short", supervisor_id: 173 }, { supervisor_name: "Silva", supervisor_id: 174 }, { supervisor_name: "Simmons", supervisor_id: 175 }, { supervisor_name: "Simon", supervisor_id: 176 }, { supervisor_name: "Simpson", supervisor_id: 177 }, { supervisor_name: "Sims", supervisor_id: 178 }, { supervisor_name: "Singleton", supervisor_id: 179 }, { supervisor_name: "Skinner", supervisor_id: 180 }, { supervisor_name: "Slater", supervisor_id: 181 }, { supervisor_name: "Sloan", supervisor_id: 182 }, { supervisor_name: "Small", supervisor_id: 183 }, { supervisor_name: "Smith", supervisor_id: 184 }, { supervisor_name: "Snider", supervisor_id: 185 }, { supervisor_name: "Snow", supervisor_id: 186 }, { supervisor_name: "Snyder", supervisor_id: 187 }, { supervisor_name: "Solis", supervisor_id: 188 }, { supervisor_name: "Solomon", supervisor_id: 189 }, { supervisor_name: "Sosa", supervisor_id: 190 }, { supervisor_name: "Soto", supervisor_id: 191 }, { supervisor_name: "Sparks", supervisor_id: 192 }, { supervisor_name: "Spears", supervisor_id: 193 }, { supervisor_name: "Spence", supervisor_id: 194 }, { supervisor_name: "Spencer", supervisor_id: 195 }, { supervisor_name: "Stafford", supervisor_id: 196 }, { supervisor_name: "Stanley", supervisor_id: 197 }, { supervisor_name: "Stanton", supervisor_id: 198 }, { supervisor_name: "Stark", supervisor_id: 199 }, { supervisor_name: "Steele", supervisor_id: 200 }, { supervisor_name: "Stein", supervisor_id: 201 }, { supervisor_name: "Stephens", supervisor_id: 202 }, { supervisor_name: "Stephenson", supervisor_id: 203 }, { supervisor_name: "Stevens", supervisor_id: 204 }, { supervisor_name: "Stevenson", supervisor_id: 205 }, { supervisor_name: "Stewart", supervisor_id: 206 }, { supervisor_name: "Stokes", supervisor_id: 207 }, { supervisor_name: "Stone", supervisor_id: 208 }, { supervisor_name: "Stout", supervisor_id: 209 }, { supervisor_name: "Strickland", supervisor_id: 210 }, { supervisor_name: "Strong", supervisor_id: 211 }, { supervisor_name: "Stuart", supervisor_id: 212 }, { supervisor_name: "Suarez", supervisor_id: 213 }, { supervisor_name: "Sullivan", supervisor_id: 214 }, { supervisor_name: "Summers", supervisor_id: 215 }, { supervisor_name: "Sutton", supervisor_id: 216 }, { supervisor_name: "Swanson", supervisor_id: 217 }, { supervisor_name: "Sweeney", supervisor_id: 218 }, { supervisor_name: "Sweet", supervisor_id: 219 }, { supervisor_name: "Sykes", supervisor_id: 220 }, { supervisor_name: "Talley", supervisor_id: 221 }, { supervisor_name: "Tanner", supervisor_id: 222 }, { supervisor_name: "Tate", supervisor_id: 223 }, { supervisor_name: "Taylor", supervisor_id: 224 }, { supervisor_name: "Terrell", supervisor_id: 225 }, { supervisor_name: "Terry", supervisor_id: 226 }, { supervisor_name: "Thomas", supervisor_id: 227 }, { supervisor_name: "Thompson", supervisor_id: 228 }, { supervisor_name: "Thornton", supervisor_id: 229 }, { supervisor_name: "Tillman", supervisor_id: 230 }, { supervisor_name: "Todd", supervisor_id: 231 }, { supervisor_name: "Torres", supervisor_id: 232 }, { supervisor_name: "Townsend", supervisor_id: 233 }, { supervisor_name: "Tran", supervisor_id: 234 }, { supervisor_name: "Travis", supervisor_id: 235 }, { supervisor_name: "Trevino", supervisor_id: 236 }, { supervisor_name: "Trujillo", supervisor_id: 237 }, { supervisor_name: "Tucker", supervisor_id: 238 }, { supervisor_name: "Turner", supervisor_id: 239 }, { supervisor_name: "Tyler", supervisor_id: 240 }, { supervisor_name: "Tyson", supervisor_id: 241 }, { supervisor_name: "Underwood", supervisor_id: 242 }, { supervisor_name: "Valdez", supervisor_id: 243 }, { supervisor_name: "Valencia", supervisor_id: 244 }, { supervisor_name: "Valentine", supervisor_id: 245 }, { supervisor_name: "Valenzuela", supervisor_id: 246 }, { supervisor_name: "Vance", supervisor_id: 247 }, { supervisor_name: "Vang", supervisor_id: 248 }, { supervisor_name: "Vargas", supervisor_id: 249 }, { supervisor_name: "Vasquez", supervisor_id: 250 }, { supervisor_name: "Vaughan", supervisor_id: 251 }, { supervisor_name: "Vaughn", supervisor_id: 252 }, { supervisor_name: "Vazquez", supervisor_id: 253 }, { supervisor_name: "Vega", supervisor_id: 254 }, { supervisor_name: "Velasquez", supervisor_id: 255 }, { supervisor_name: "Velazquez", supervisor_id: 256 }, { supervisor_name: "Velez", supervisor_id: 257 }, { supervisor_name: "Villarreal", supervisor_id: 258 }, { supervisor_name: "Vincent", supervisor_id: 259 }, { supervisor_name: "Vinson", supervisor_id: 260 }, { supervisor_name: "Wade", supervisor_id: 261 }, { supervisor_name: "Wagner", supervisor_id: 262 }, { supervisor_name: "Walker", supervisor_id: 263 }, { supervisor_name: "Wall", supervisor_id: 264 }, { supervisor_name: "Wallace", supervisor_id: 265 }, { supervisor_name: "Waller", supervisor_id: 266 }, { supervisor_name: "Walls", supervisor_id: 267 }, { supervisor_name: "Walsh", supervisor_id: 268 }, { supervisor_name: "Walter", supervisor_id: 269 }, { supervisor_name: "Walters", supervisor_id: 270 }, { supervisor_name: "Walton", supervisor_id: 271 }, { supervisor_name: "Ward", supervisor_id: 272 }, { supervisor_name: "Ware", supervisor_id: 273 }, { supervisor_name: "Warner", supervisor_id: 274 }, { supervisor_name: "Warren", supervisor_id: 275 }, { supervisor_name: "Washington", supervisor_id: 276 }, { supervisor_name: "Waters", supervisor_id: 277 }, { supervisor_name: "Watkins", supervisor_id: 278 }, { supervisor_name: "Watson", supervisor_id: 279 }, { supervisor_name: "Watts", supervisor_id: 280 }, { supervisor_name: "Weaver", supervisor_id: 281 }, { supervisor_name: "Webb", supervisor_id: 282 }, { supervisor_name: "Weber", supervisor_id: 283 }, { supervisor_name: "Webster", supervisor_id: 284 }, { supervisor_name: "Weeks", supervisor_id: 285 }, { supervisor_name: "Weiss", supervisor_id: 286 }, { supervisor_name: "Welch", supervisor_id: 287 }, { supervisor_name: "Wells", supervisor_id: 288 }, { supervisor_name: "West", supervisor_id: 289 }, { supervisor_name: "Wheeler", supervisor_id: 290 }, { supervisor_name: "Whitaker", supervisor_id: 291 }, { supervisor_name: "White", supervisor_id: 292 }, { supervisor_name: "Whitehead", supervisor_id: 293 }, { supervisor_name: "Whitfield", supervisor_id: 294 }, { supervisor_name: "Whitley", supervisor_id: 295 }, { supervisor_name: "Whitney", supervisor_id: 296 }, { supervisor_name: "Wiggins", supervisor_id: 297 }, { supervisor_name: "Wilcox", supervisor_id: 298 }, { supervisor_name: "Wilder", supervisor_id: 299 }, { supervisor_name: "Wiley", supervisor_id: 300 }, { supervisor_name: "Wilkerson", supervisor_id: 301 }, { supervisor_name: "Wilkins", supervisor_id: 302 }, { supervisor_name: "Wilkinson", supervisor_id: 303 }, { supervisor_name: "William", supervisor_id: 304 }, { supervisor_name: "Williams", supervisor_id: 305 }, { supervisor_name: "Williamson", supervisor_id: 306 }],
-
-
   students: [{
     student_name: 'Livingston', student_id: 1
   },
@@ -1849,45 +1847,57 @@ module.exports = {
   {
     student_name: 'Zimmerman', student_id: 462
   },
-],
-courses: [
-  {
-    course_name: 'Biology',
-    course_id: 1
-  },
-  {
-    course_name: 'Physics',
-    course_id: 2
-  },
-  {
-    course_name: 'Mathematics',
-    course_id: 3
-  },
-  {
-    course_name: 'Geography',
-    course_id: 4
-  },
-  {
-    course_name: 'Chemistry',
-    course_id: 5
-  },
-  {
-    course_name: 'Botany',
-    course_id: 6
-  },
-  {
-    course_name: 'Zoology',
-    course_id: 7
-  },
-  {
-    course_name: 'Economics',
-    course_id: 8
-  },
-  {
-    course_name: 'Accounting',
-    course_id: 9
-  },
-],
+  ],
+  courses: [
+    {
+      course_name: 'Biology',
+      course_id: 1,
+
+    },
+    {
+      course_name: 'Physics',
+      course_id: 2,
+      sections: [
+        'Momentum',
+        'Vertical Projectile Motion',
+        'Work - Energy',
+        'Power and Mechanics Consolidation',
+        'Doppler Effect',
+        'Electric Circuits',
+        'Electrodynamics',
+        'Photoelectric Effect',
+        'Optical Phenomena'
+      ]
+    },
+    {
+      course_name: 'Mathematics',
+      course_id: 3,
+    },
+    {
+      course_name: 'Geography',
+      course_id: 4
+    },
+    {
+      course_name: 'Chemistry',
+      course_id: 5
+    },
+    {
+      course_name: 'Botany',
+      course_id: 6
+    },
+    {
+      course_name: 'Zoology',
+      course_id: 7
+    },
+    {
+      course_name: 'Economics',
+      course_id: 8
+    },
+    {
+      course_name: 'Accounting',
+      course_id: 9
+    },
+  ],
   teachers: [{
     teacher_name: 'Abbott', teacher_id: 1
   },
@@ -2286,5 +2296,94 @@ courses: [
 
   {
     teacher_name: 'Brewer', teacher_id: 100
-  }]
+  }],
+  assessments: [{
+    assessment_type: 'Exam',
+    assessment_name: 'Mathematics June Examination',
+    assessment_start_date: '2018-03-12T09:00',
+    assessment_end_date: null,
+    assessment_total_score: 100
+  },
+  {
+    assessment_type: 'Test',
+    assessment_name: 'Mathematics Test',
+    assessment_start_date: '2019-05-01T07:15',
+    assessment_end_date: null,
+    assessment_total_score: 50
+  },
+  {
+    assessment_type: 'Project',
+    assessment_name: 'Mathematics Project',
+    assessment_start_date: '2018-07-04T14:00',
+    assessment_end_date: '2018-07-14T14:00',
+    assessment_total_score: 100
+  }],
+  assessment_sections: {
+    //Mathematics
+    mathematics: [{
+      assessment_section_name: 'Sequences and Series',
+      assessment_section_mark_contribution: 25
+    },
+    {
+      assessment_section_name: 'Functions and Graphs',
+      assessment_section_mark_contribution: 35
+    },
+    {
+      assessment_section_name: 'Exponents and Logarithms',
+      assessment_section_mark_contribution: 15
+    },
+    {
+      assessment_section_name: 'Financial Maths',
+      assessment_section_mark_contribution: 20
+    }, {
+      assessment_section_name: 'Trigonometry Identities / Transformations',
+      assessment_section_mark_contribution: 10
+    },
+    {
+      assessment_section_name: 'Introduction to Differential Calculus',
+      assessment_section_mark_contribution: 10
+    }],
+    // Biology
+    bilogy: [{
+      assessment_section_name: 'The Nucleus and DNA',
+      assessment_section_mark_contribution: 9
+    },
+    {
+      assessment_section_name: 'Protein Synthesis and DNA Fingerprinting',
+      assessment_section_mark_contribution: 9
+    },
+    {
+      assessment_section_name: 'Cell Division - Mitosis and Meiosis',
+      assessment_section_mark_contribution: 9
+    },
+    {
+      assessment_section_name: 'Strategies for Reproduction',
+      assessment_section_mark_contribution: 9
+    },
+    {
+      assessment_section_name: 'Male and Female Reproductive Structures',
+      assessment_section_mark_contribution: 9
+    },
+    {
+      assessment_section_name: 'Gametogenesis, Hormone Control System and Menopause',
+      assessment_section_mark_contribution: 9
+    },
+    {
+      assessment_section_name: 'Human Reproduction',
+      assessment_section_mark_contribution: 9
+    },
+    {
+      assessment_section_name: 'The Nervous System',
+      assessment_section_mark_contribution: 9
+    }, {
+      assessment_section_name: 'The Eye and Ear',
+      assessment_section_mark_contribution: 9
+    }, {
+      assessment_section_name: 'Plant Responses to the Environment',
+      assessment_section_mark_contribution: 9
+    }, {
+      assessment_section_name: 'Biodiversity I',
+      assessment_section_mark_contribution: 9
+    }]
+  }
 }

@@ -17,6 +17,9 @@ const StudentType = new GraphQLObjectType({
     },
     student_name: {
       type: GraphQLNonNull(GraphQLString)
+    },
+    teacher: {
+      type: TeacherType
     }
   })
 });

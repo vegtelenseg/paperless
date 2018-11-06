@@ -23,7 +23,8 @@ exports.up = function(knex, Promise) {
       CREATE TABLE IF NOT EXISTS subject
       (
         subject_id SERIAL NOT NULL PRIMARY KEY,
-        subject_name VARCHAR (100) NOT NULL
+        subject_name VARCHAR (100) NOT NULL,
+        subject_sections VARCHAR[]
       );
 
       CREATE TABLE IF NOT EXISTS assessment
