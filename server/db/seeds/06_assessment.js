@@ -5,7 +5,7 @@ exports.seed = function(knex, Promise) {
   return Promise.all(
     assessments.map((assessment, idx) =>
       knex('assessment')
-        .insert({ ...assessment, assessment_subject_id: ++idx })
+        .insert({ ...assessment, subject_id: ++idx })
         .then(() => {})
     )
   );

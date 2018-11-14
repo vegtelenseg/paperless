@@ -1,5 +1,5 @@
 module.exports = {
-  supervisors: [
+  hods: [
     { supervisor_name: 'Noble', supervisor_id: 1 },
     { supervisor_name: 'Noel', supervisor_id: 2 },
     { supervisor_name: 'Nolan', supervisor_id: 3 },
@@ -2621,7 +2621,49 @@ module.exports = {
   courses: [
     {
       course_name: 'Biology',
-      course_id: 1
+      course_id: 1,
+      sections: [
+        {
+          name: 'The Nucleus and DNA',
+          mark_contribution: 10
+        },
+        {
+          name: 'Protein Synthesis and DNA Fingerprinting',
+          mark_contribution: 10
+        },
+        {
+          name: 'Cell Division - Mitosis and Meiosis',
+          mark_contribution: 10
+        },
+        {
+          name: 'Strategies for Reproduction',
+          mark_contribution: 10
+        },
+        {
+          name: 'Male and Female Reproductive Structures',
+          mark_contribution: 10
+        },
+        {
+          name: 'Gametogenesis, Hormone Control System and Menopause',
+          mark_contribution: 10
+        },
+        {
+          name: 'Human Reproduction',
+          mark_contribution: 10
+        },
+        {
+          name: 'The Nervous System',
+          mark_contribution: 10
+        },
+        {
+          name: 'The Eye and Ear',
+          mark_contribution: 10
+        },
+        {
+          name: 'Plant Responses to the Environment',
+          mark_contribution: 10
+        }
+      ]
     },
     {
       course_name: 'Physics',
@@ -2640,7 +2682,33 @@ module.exports = {
     },
     {
       course_name: 'Mathematics',
-      course_id: 3
+      course_id: 3,
+      sections: [
+        {
+          name: 'Sequences and Series',
+          mark_contribution: 25
+        },
+        {
+          name: 'Functions and Graphs',
+          mark_contribution: 35
+        },
+        {
+          name: 'Exponents and Logarithms',
+          mark_contribution: 15
+        },
+        {
+          name: 'Financial Maths',
+          mark_contribution: 20
+        },
+        {
+          name: 'Trigonometry Identities / Transformations',
+          mark_contribution: 10
+        },
+        {
+          name: 'Introduction to Differential Calculus',
+          mark_contribution: 10
+        }
+      ]
     },
     {
       course_name: 'Geography',
@@ -3170,96 +3238,96 @@ module.exports = {
   ],
   assessments: [
     {
-      assessment_type: 'Exam',
-      assessment_name: 'Mathematics June Examination',
-      assessment_start_date: '2018-03-12T09:00',
-      assessment_end_date: null,
-      assessment_total_score: 100
+      type: 'Exam',
+      name: 'Mathematics June Examination',
+      start_date: '2018-03-12T09:00',
+      end_date: null,
+      total_score: 100
     },
     {
-      assessment_type: 'Test',
-      assessment_name: 'Mathematics Test',
-      assessment_start_date: '2019-05-01T07:15',
-      assessment_end_date: null,
-      assessment_total_score: 50
+      type: 'Test',
+      name: 'Mathematics Test',
+      start_date: '2019-05-01T07:15',
+      end_date: null,
+      total_score: 50
     },
     {
-      assessment_type: 'Project',
-      assessment_name: 'Mathematics Project',
-      assessment_start_date: '2018-07-04T14:00',
-      assessment_end_date: '2018-07-14T14:00',
-      assessment_total_score: 100
+      type: 'Project',
+      name: 'Mathematics Project',
+      start_date: '2018-07-04T14:00',
+      end_date: '2018-07-14T14:00',
+      total_score: 100
     }
   ],
   assessment_sections: {
     //Mathematics
     mathematics: [
       {
-        assessment_section_name: 'Sequences and Series',
-        assessment_section_mark_contribution: 25
+        name: 'Sequences and Series',
+        mark_contribution: 25
       },
       {
-        assessment_section_name: 'Functions and Graphs',
-        assessment_section_mark_contribution: 35
+        name: 'Functions and Graphs',
+        mark_contribution: 35
       },
       {
-        assessment_section_name: 'Exponents and Logarithms',
-        assessment_section_mark_contribution: 15
+        name: 'Exponents and Logarithms',
+        mark_contribution: 15
       },
       {
-        assessment_section_name: 'Financial Maths',
-        assessment_section_mark_contribution: 20
+        name: 'Financial Maths',
+        mark_contribution: 20
       },
       {
-        assessment_section_name: 'Trigonometry Identities / Transformations',
-        assessment_section_mark_contribution: 10
+        name: 'Trigonometry Identities / Transformations',
+        mark_contribution: 10
       },
       {
-        assessment_section_name: 'Introduction to Differential Calculus',
-        assessment_section_mark_contribution: 10
+        name: 'Introduction to Differential Calculus',
+        mark_contribution: 10
       }
     ],
     // Biology
     bilogy: [
       {
-        assessment_section_name: 'The Nucleus and DNA',
-        assessment_section_mark_contribution: 10
+        name: 'The Nucleus and DNA',
+        mark_contribution: 10
       },
       {
-        assessment_section_name: 'Protein Synthesis and DNA Fingerprinting',
-        assessment_section_mark_contribution: 10
+        name: 'Protein Synthesis and DNA Fingerprinting',
+        mark_contribution: 10
       },
       {
-        assessment_section_name: 'Cell Division - Mitosis and Meiosis',
-        assessment_section_mark_contribution: 10
+        name: 'Cell Division - Mitosis and Meiosis',
+        mark_contribution: 10
       },
       {
-        assessment_section_name: 'Strategies for Reproduction',
-        assessment_section_mark_contribution: 10
+        name: 'Strategies for Reproduction',
+        mark_contribution: 10
       },
       {
-        assessment_section_name: 'Male and Female Reproductive Structures',
-        assessment_section_mark_contribution: 10
+        name: 'Male and Female Reproductive Structures',
+        mark_contribution: 10
       },
       {
-        assessment_section_name: 'Gametogenesis, Hormone Control System and Menopause',
-        assessment_section_mark_contribution: 10
+        name: 'Gametogenesis, Hormone Control System and Menopause',
+        mark_contribution: 10
       },
       {
-        assessment_section_name: 'Human Reproduction',
-        assessment_section_mark_contribution: 10
+        name: 'Human Reproduction',
+        mark_contribution: 10
       },
       {
-        assessment_section_name: 'The Nervous System',
-        assessment_section_mark_contribution: 10
+        name: 'The Nervous System',
+        mark_contribution: 10
       },
       {
-        assessment_section_name: 'The Eye and Ear',
-        assessment_section_mark_contribution: 10
+        name: 'The Eye and Ear',
+        mark_contribution: 10
       },
       {
-        assessment_section_name: 'Plant Responses to the Environment',
-        assessment_section_mark_contribution: 10
+        name: 'Plant Responses to the Environment',
+        mark_contribution: 10
       }
     ]
   }

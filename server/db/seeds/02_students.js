@@ -5,7 +5,7 @@ exports.seed = function(knex, Promise) {
   return Promise.all(
     students.map(student =>
       knex('student')
-        .insert({ student_name: student.student_name || 'Broskie' })
+        .insert({ name: student.student_name || 'Broskie' })
         .then(() => {})
     )
   );

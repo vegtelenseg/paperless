@@ -1,4 +1,4 @@
-const { courses = [], students = [], supervisors = [], teachers = [] } = require('../data/data');
+const { courses = [], students = [], hods = [], teachers = [] } = require('../data/data');
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
   return Promise.all(
@@ -10,7 +10,7 @@ exports.seed = function(knex, Promise) {
             knex('student')
               .insert({ student_name: student })
               .then(() => {
-                supervisors.map(supervisor =>
+                hods.map(supervisor =>
                   knex('supervisor')
                     .insert({ supervisor_name: supervisor })
                     .then(() => {

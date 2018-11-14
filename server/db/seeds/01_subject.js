@@ -6,7 +6,7 @@ exports.seed = function(knex, Promise) {
     courses.map(course =>
       knex('subject')
         .insert({
-          subject_name: course.course_name || 'Physics'
+          name: course.course_name || 'Physics'
         })
         .then(() => {})
     )

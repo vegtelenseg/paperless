@@ -26,17 +26,17 @@ const StudentType = new GraphQLObjectType({
 
 StudentType._typeConfig = {
   sqlTable: 'student',
-  uniqueKey: 'student_id'
+  uniqueKey: 'id'
 };
 
 // Teacher Type
 const TeacherType = new GraphQLObjectType({
   name: 'Teacher',
   fields: () => ({
-    teacher_id: {
+    id: {
       type: GraphQLNonNull(GraphQLInt)
     },
-    teacher_name: {
+    name: {
       type: GraphQLNonNull(GraphQLString)
     }
   })
@@ -44,7 +44,7 @@ const TeacherType = new GraphQLObjectType({
 
 TeacherType._typeConfig = {
   sqlTable: 'teacher',
-  uniqueKey: 'teacher_id'
+  uniqueKey: 'id'
 };
 
 // Root Type

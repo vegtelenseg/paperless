@@ -9,7 +9,7 @@ exports.seed = function(knex, Promise) {
         knex('assessment_section')
           .insert({
             ...section,
-            assessment_section_assessment_id: idx + 1
+            assessment_id: idx + 1
           })
           .then(() => {})
       )
