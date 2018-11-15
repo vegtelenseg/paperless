@@ -2,7 +2,7 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      host: '127.0.0.1',
+      host: 'localhost',
       user: 'postgres',
       password: 'F#ck2018',
       database: 'postgres'
@@ -13,10 +13,6 @@ module.exports = {
     },
     seeds: {
       directory: `${__dirname}/db/seeds`
-    },
-    pool: {
-      min: 0,
-      max: 7
     },
     debug: true
   }
