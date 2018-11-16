@@ -5,8 +5,14 @@ const knex = require('knex')(knexConfig.development);
 const getStudentById = (parent, args, context, resolveInfo) =>
   joinMonster(resolveInfo, context, () => knex('student').where('id', '=', args.id));
 
+const getAllStudents = (parent, args, context, resolveInfo) =>
+  joinMonster(resolveInfo, context, () => knex.raw(`SELECT * FROM student`));
+
 const getTeacherById = (parent, args, context, resolveInfo) =>
   joinMonster(resolveInfo, context, () => knex('teacher').where('id', '=', args.id));
+
+const getAllTeachers = (parent, args, context, resolveInfo) =>
+  joinMonster(resolveInfo, context, () => knex.raw(`SELECT * FROM teacher`));
 
 const getStudentTakingSubjectTaughtBy = (parent, args, context, resolveInfo) =>
   joinMonster(resolveInfo, context, () =>
@@ -21,8 +27,13 @@ const getStudentTakingSubjectTaughtBy = (parent, args, context, resolveInfo) =>
   `)
   );
 
+const getAllSubjects = (parent, args, context, resolveInfo) =>
+  joinMonster(resolveInfo, context, () => knex.raw(`SELECT * FROM subject`));
 module.exports = {
   getStudentById,
   getTeacherById,
-  getStudentTakingSubjectTaughtBy
+  getStudentTakingSubjectTaughtBy,
+  getAllStudents,
+  getAllTeachers,
+  getAllSubjects
 };
