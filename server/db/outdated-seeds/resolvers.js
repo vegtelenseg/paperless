@@ -29,6 +29,7 @@ const getStudentTakingSubjectTaughtBy = (parent, args, context, resolveInfo) =>
 
 const getAllSubjects = (parent, args, context, resolveInfo) =>
   joinMonster(resolveInfo, context, () => knex.raw(`SELECT * FROM subject`));
+
 module.exports = {
   getStudentById,
   getTeacherById,
